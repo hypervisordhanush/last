@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .chatbox{
+            width: 50%;
+            height: 50vh;
+            background-color: black;
+            margin-left: 25%;
+        }
+        p{
+            color: aliceblue;
+        }
+    </style>
+    <div class="chatbox">
+        <p id="me"></p>
+        <p id="cat"></p>
+    </div>
+    
+    <form style="margin-left: 25%;margin-top: 2%;" action="" name="form1">
+       <p>is you </p>start your conversation by sending "hi"</p><input type="text" name="cc">
+        
+    </form>
+    <button onclick="fun()">send</button>
+    <div class="menu"><h2>You can only ask the following:</h2>
+    <pre>    1.what is ur name
+    2.what r u doing
+    3.what is your name
+    </pre>
+    </div>
+    <script>
+        alert("do u want to waste ur time?");
+        function fun(){
+            var me = document.form1.cc.value;
+            document.getElementById("me").innerHTML = "you: -- "+me;
+            
+            if(me=="hi"){
+                document.getElementById("cat").innerHTML = "cat: -- "+"what do u want?👺";
+            }
+            else if(me=="what r u doing"){
+                document.getElementById("cat").innerHTML = "cat: -- "+"why do u care get the _____🐱‍👓out of here";
+            }
+            else if(me=="what is ur name"){
+                document.getElementById("cat").innerHTML = "cat: -- "+"My name is jayamma cat and I want milk ";
+            }
+            else{
+                document.getElementById("cat").innerHTML = "cat: -- "+"i am not interested in ur talk, get lost!!!😼😼😼😼";
+            }
+        }
+    </script>
+</body>
+</html>
